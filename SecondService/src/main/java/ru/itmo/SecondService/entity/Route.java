@@ -18,7 +18,7 @@ public class Route {
     private long id; // The value of the field must be greater than 0, The value of this field must be unique, The value of this field must be generated automatically
     private String name; // Field cannot be null, String cannot be empty
     private Coordinates coordinates; // Field cannot be null
-    private java.time.LocalDateTime creationDate; // The field cannot be null, the value of this field must be generated automatically
+    private String creationDate; // The field cannot be null, the value of this field must be generated automatically
     private Location fromLocation; // Field can be null
     private Location to; // Field can be null
     private Integer distance; // The field can be null, the field value must be greater than 1
@@ -29,7 +29,7 @@ public class Route {
         this.fromLocation = fromLocation;
         this.to = to;
         this.distance = distance;
-        this.creationDate = java.time.LocalDateTime.now();
+        this.creationDate = java.time.LocalDateTime.now().toString();
     }
 
 }

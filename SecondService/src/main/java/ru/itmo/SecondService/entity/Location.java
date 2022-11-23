@@ -12,8 +12,6 @@ import static javax.xml.bind.annotation.XmlAccessType.FIELD;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@XmlRootElement(name = "location")
-@XmlAccessorType(FIELD)
 public class Location {
 
     private int id;
